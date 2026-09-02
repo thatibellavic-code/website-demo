@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Site</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Your Site</a>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav" id="mainNav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 class="hero-title">Design with calm and character</h1>
+          <p class="hero-sub">A small collection of work and experiments — subtle motion, clean typography, and minimal interfaces.</p>
+          <p><a class="cta" href="#projects">See projects</a></p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <!-- decorative shape -->
+          <svg viewBox="0 0 600 600" class="blob" xmlns="http://www.w3.org/2000/svg" role="img">
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#ffd6e0"/>
+                <stop offset="1" stop-color="#cfe8ff"/>
+              </linearGradient>
+            </defs>
+            <path fill="url(#g)" d="M421.1,354.3Q393,458,287.2,475.6Q181.4,493.1,96.3,405.6Q11.1,318,43.7,206.4Q76.3,94.8,186.8,77.9Q297.3,61,351.6,149.7Q405.9,238.3,421.1,354.3Z"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Selected projects</h2>
+        <div class="grid" id="projectsGrid">
+          <!-- Project cards: replace image URLs and text -->
+          <article class="card">
+            <div class="card-media" style="background-image:url('https://picsum.photos/id/1015/800/600');"></div>
+            <div class="card-body">
+              <h3>Project One</h3>
+              <p>Minimal UI experiments and type-first layouts.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media" style="background-image:url('https://picsum.photos/id/1025/800/600');"></div>
+            <div class="card-body">
+              <h3>Project Two</h3>
+              <p>Interactive micro-animations for product pages.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media" style="background-image:url('https://picsum.photos/id/1035/800/600');"></div>
+            <div class="card-body">
+              <h3>Project Three</h3>
+              <p>Branding, color studies, and visual identity.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media" style="background-image:url('https://picsum.photos/id/1045/800/600');"></div>
+            <div class="card-body">
+              <h3>Project Four</h3>
+              <p>Responsive patterns and layout systems.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <p>I’m a designer/developer who focuses on simple, tactile interfaces. I like clear type, restrained color, and careful motion. Replace this with your bio.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p>Want to collaborate or ask a question? Email <a href="mailto:you@example.com">you@example.com</a> or use the link below.</p>
+        <p><a class="cta" href="mailto:you@example.com">Email me</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Your Name — Inspired by cinni.net</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
